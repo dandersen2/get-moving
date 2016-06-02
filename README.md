@@ -17,6 +17,6 @@ Data used by the app shown here on the rails server in a simple printout used fo
 ![rails-server](https://github.com/dandersen2/get-moving/blob/master/app-event-data3.png "Server")
 ***
 
-Get Moving was a three-person final project for the final phase of Dev Bootcamp in NYC. The entire project and presentation was completed in 8 days and we had no prior experience with React Native when we began.
+Get Moving was a three-person final project for the final phase of [Dev Bootcamp](http://devbootcamp.com/) in NYC. The entire project and presentation was completed in 8 days and we had no prior experience with React Native when we began.
 
 [App presentation on Youtube](https://youtu.be/fg7B2T1fUbI?t=21m19s)
