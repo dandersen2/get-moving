@@ -14,7 +14,7 @@ The rails app runs on an independent server which runs a scheduled rake task tha
 
 ***
 Data used by the App shown here on the rails server in a simple printout used for development and testing:
-![rails-server-data](https://github.com/dandersen2/get-moving/blob/master/add-event-data2.png "Server Data")
+![rails-server](https://github.com/dandersen2/get-moving/blob/master/app-event-data2.png "Server")
 ***
 
 Get Moving was a three-person final project for the final phase of Dev Bootcamp in NYC. The entire project and presentation was completed in 8 days and we had no prior experience with React Native when we began.
