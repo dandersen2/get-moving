@@ -1,0 +1,18 @@
+<% @events.each do |event| %>
+  <p>Name: <%= event.name %></p>
+  <p>Address: <%= event.address %></p>
+  <p>Start Time: <%= event.start_time %></p>
+  <p>Departure Time: <%= event.departure_time %></p>
+  <p>is_latest: <%= event.is_latest %></p>
+  <p>has_notified: <%= event.has_notified %></p>
+  <p>created_at: <%= event.created_at %></p>
+  <p>updated_at: <%= event.updated_at %></p>
+  <p>Device Token Present: <%= !!event.device_token %></p>
+  <p>Device Token: <%= event.device_token %></p>
+  <p>user_lat:<%= event.user_lat %></p>
+  <p>user_lng:<%= event.user_lng %></p>
+  <p>event_lat:<%= event.event_lat %></p>
+  <p>event_lng:<%= event.event_lng %></p>
+  <hr>
+  <hr>
+<% end %>

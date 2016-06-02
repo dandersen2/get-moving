@@ -1,0 +1,159 @@
+* cac3109 : Edit seed data and test rake task manually, all functions working
+*   220df49 : Merge pull request #28 from nyc-chorus-frogs-2016/da-final-wed
+|\  
+| * b015843 : Add notes
+|/  
+* 49633cd : Add comment about problems with pn's
+* d1c7ba5 : Fix typo in user_email
+* 237fbc2 : Prevent notification of stale events
+*   903cb60 : Merge pull request #27 from nyc-chorus-frogs-2016/da-add-transport-to-event-model
+|\  
+| * 6018888 : Add google event id to events
+|/  
+*   fd19af8 : Merge pull request #26 from nyc-chorus-frogs-2016/da-fix-rake-task-update-column
+|\  
+| * d12de1e : Fix rake test to query only latest events, pn's working
+|/  
+*   fb6086d : Merge pull request #25 from nyc-chorus-frogs-2016/da-rails-testing
+|\  
+| * 463faec : Add google maps key and filter for event directions
+|/  
+* d816056 : Remove username from production db
+* 7c48087 : Don't send password on production db
+* f092047 : Update server name
+* 0255052 : Update deploy.rb port
+*   d225bcb : Merge pull request #24 from nyc-chorus-frogs-2016/capistrano
+|\  
+| * aeed6ea : Add nginx configuration
+| * d37a30f : Add capistrano deploy files
+| * 072a5db : Add capistrano gems
+|/  
+*   55b6ef8 : Merge pull request #23 from nyc-chorus-frogs-2016/da-ms-test-ruby-coords
+|\  
+| * 88426ec : Replace index
+| * 3e79277 : remove index
+| * dfe1523 : Change if statemtent
+* |   4f2bc25 : Merge pull request #22 from nyc-chorus-frogs-2016/da-ms-test-ruby-coords
+|\ \  
+| |/  
+| * c7e3fc4 : Add if statement for previous events without coords to output in index.html.erb
+|/  
+*   3893830 : Merge pull request #21 from nyc-chorus-frogs-2016/do-deploy
+|\  
+| * e819936 : Edit typo in scheduled_jobs
+* |   2b5361c : Merge pull request #20 from nyc-chorus-frogs-2016/do-deploy
+|\ \  
+| |/  
+| * 2c46025 : Update seeds with lat and lng coords to test departure time calc in rails
+| * eb7492d : Add scheduled jobs task
+| * 72b544f : Add rake task to calculate directions in Ruby
+* |   beb8153 : Merge pull request #19 from nyc-chorus-frogs-2016/da-heroku-testing-22
+|\ \  
+| |/  
+| * 8fc81ce : Add working MVP version with single alert for a future event that hasnt started, with departure time any time prior to 10 minutes from now. Next step is to move some of the calulations over to ruby so they run more reliably via the server rather than only when the app is open.
+| * 3d6ceb3 : Fix where query for events you should have already left for, remove past events from alerts
+| * 4dfa162 : Add is_latest filters to rake task
+* |   9765f7d : Merge pull request #18 from nyc-chorus-frogs-2016/da-heroku-testing-22
+|\ \  
+| |/  
+| * aa1c013 : Change rake task to alert for events with departure time in the past
+| * 5314e3a : Add new islatest
+* |   cef20b6 : Merge pull request #17 from nyc-chorus-frogs-2016/da-heroku-testing-22
+|\ \  
+| |/  
+| * 4e6e2cb : Edit styling to heroku server, push notifications TESTED and Working
+* |   299fc90 : Merge pull request #16 from nyc-chorus-frogs-2016/da-heroku-testing-22
+|\ \  
+| |/  
+| * e26f9e1 : Edit output of rake task to heroku
+| * 989443a : Change seed file
+| * 3add8f9 : update event.devicetoken in rake task
+|/  
+*   f556ca8 : Merge pull request #15 from nyc-chorus-frogs-2016/da-23-heroku-scheduler-2
+|\  
+| * fe4fa78 : Update departure time for heroku test
+* |   ccc4f1f : Merge pull request #14 from nyc-chorus-frogs-2016/da-23-heroku-scheduler-2
+|\ \  
+| |/  
+| *   fb37316 : Fix merge conflict seed data
+| |\  
+| |/  
+|/|   
+* |   fd8979f : Merge pull request #12 from nyc-chorus-frogs-2016/da-23-heroku-scheduler
+|\ \  
+| * | 3aa53e9 : fix comma in event create route
+* | |   8be613c : Merge pull request #11 from nyc-chorus-frogs-2016/da-23-heroku-scheduler
+|\ \ \  
+| |/ /  
+| * | 346c280 : Add departure time to event create route
+| * | e336122 : Add device token to output heroku
+* | |   3395b52 : Merge pull request #10 from nyc-chorus-frogs-2016/da-23-heroku-scheduler
+|\ \ \  
+| |/ /  
+| * | db8da25 : Re-add the device token field after heroku reset
+| * | 1b6dd21 : remove device token
+| * | 35309c1 : Reset db to test heroku
+|/ /  
+| * 9f54529 : Change departure time to test heroku scheduler
+|/  
+*   e139c15 : Merge pull request #9 from nyc-chorus-frogs-2016/da-add-token-validation
+|\  
+| * 558b76e : Add valdiation for device token to event model
+|/  
+*   3ee34c9 : Catch up master to current
+|\  
+| *   210c3f0 : Merge pull request #7 from nyc-chorus-frogs-2016/da-push-notifications-rails
+| |\  
+| | * 60a9b8e : Add device token to table, model and add send_notifications to rake task
+| |/  
+* |   35add98 : Merge branch 'jpoz-apns'
+|\ \  
+| |/  
+|/|   
+| *   51f4b1e : Merge branch 'master' into jpoz-apns
+| |\  
+| |/  
+|/|   
+* |   42e5085 : Merge pull request #6 from nyc-chorus-frogs-2016/da-add-hr
+|\ \  
+| * \   392df0e : Merge branch 'master' of https://github.com/nyc-chorus-frogs-2016/get-moving-rails
+| |\ \  
+| |/ /  
+|/| |   
+* | |   14e98f0 : Merge pull request #5 from nyc-chorus-frogs-2016/r12factor
+|\ \ \  
+| * | | 0af031b : Edit params in events controller
+| | * | 4a7efc4 : Add hr to test update to heroku
+| |/ /  
+|/| |   
+| | * cb1df94 : Steven's version
+| |/  
+|/|   
+* |   e427fa0 : Merge pull request #4 from nyc-chorus-frogs-2016/r12factor
+|\ \  
+| |/  
+| * 8b7e6a3 : Fix ordering events desc
+| * eed8ae8 : Order events by post descending
+| * 2eafbc7 : Add styling to index page on heroku
+| * e344361 : Add index root to routes file
+| * e91343e : Add index route and vie for events on heroku server
+| * 1bf8c8e : Delete comments in event model
+| * f6fb909 : Add 12factor gem
+* |   4d69705 : Merge pull request #3 from nyc-chorus-frogs-2016/da-initial-commit-heroku
+|\ \  
+| * | b63b68d : Specify ruby version
+* | |   f9692ee : Merge pull request #2 from nyc-chorus-frogs-2016/da-initial-commit-heroku
+|\ \ \  
+| |/ /  
+| | /   
+| |/    
+|/|     
+| * 793424a : Add tested rake file to heroku server
+* |   3c9374c : Merge pull request #1 from nyc-chorus-frogs-2016/da-initial-commit-heroku
+|\ \  
+| |/  
+| * 9642a0c : Add files to new heroku repo
+| * 9042567 : Add working rake task to get next event, needs if statement for empty collection
+|/  
+* e18b8c4 : Add rspec, faker gems, install rspec
+* 4256109 : Initial commit. get_moving rails server skeleton
